@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :upandrunning, Upandrunning.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "password",
   database: "upandrunning_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
