@@ -30,9 +30,9 @@ defmodule UpandrunningWeb.Router do
 
   end
 
-  scope "/", UpandrunningWeb do
-    get "/redirect_test", PageController, :redirect_test, as: :redirect_test
-  end
+  # scope "/", UpandrunningWeb do
+  #   get "/redirect_test", PageController, :redirect_test, as: :redirect_test
+  # end
 
   # Other scopes may use custom stacks.
   scope "/api", UpandrunningWeb do
