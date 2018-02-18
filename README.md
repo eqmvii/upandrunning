@@ -1,5 +1,9 @@
 # Upandrunning
 
+Stopping point: `Now let’s actually create another layout and render the index template into it`
+
+at: https://hexdocs.pm/phoenix/controllers.html#content
+
 To load the app in iex, use: `iex -S mix`
 
 

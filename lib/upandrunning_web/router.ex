@@ -17,8 +17,11 @@ defmodule UpandrunningWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/plain", PageController, :plain_index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+    get "/raw/", PageController, :raw
+    get "/raw/:id", PageController, :raw
 
     resources "/users", UserController
     resources "/posts", PostController, only: [:index, :show]
@@ -30,6 +33,8 @@ defmodule UpandrunningWeb.Router do
   # Other scopes may use custom stacks.
   scope "/api", UpandrunningWeb do
     pipe_through :api
+
+    get "/", PageController, :blob
 
     resources "/reviews", ReviewController
   end
