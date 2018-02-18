@@ -2,4 +2,7 @@
     <h2>Welcome <%= assigns.messenger %></h2>
     <!-- assigns.messenger is identical to @messenger -->
     <p>Change the URL parameter to match your desired greeting.</p>
+    <p><a href="<%= hello_path(@conn, :index) %>">To the Welcome Page!</a></p>
+    <% IO.puts "Howdy! Show.html.eex from the hello route is being displayed." %>
+    <% IO.puts user_url(@conn, :show, 4, admin: true, frog: false, age: 30) %>
 </div>

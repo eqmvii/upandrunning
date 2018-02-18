@@ -1,5 +1,8 @@
 # Upandrunning
 
+To load the app in iex, use: `iex -S mix`
+
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

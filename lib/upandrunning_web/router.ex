@@ -19,10 +19,21 @@ defmodule UpandrunningWeb.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+
+    resources "/users", UserController
+    resources "/posts", PostController, only: [:index, :show]
+    resources "/comments", CommentController, except: [:delete]
+    
+
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", UpandrunningWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", UpandrunningWeb do
+    pipe_through :api
+
+    resources "/reviews", ReviewController
+  end
 end
+
+# examine routes via 
+# mix phx.routes
