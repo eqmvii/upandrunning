@@ -2,6 +2,13 @@
 
 To load the app in iex, use: `iex -S mix`
 
+Paused at: module is the foundation we need 
+
+from https://hexdocs.pm/phoenix/ecto.html#content
+
+## Postgres drama on Ubuntu? Try:
+
+https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge
 
 ## To start your Phoenix server:
 
