@@ -1,5 +1,7 @@
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}!", name: "phoenix" %></h2>
+  <p><a href="<%= page_path @conn, :index %>">Link back to this page</a></p>
+  <p><a href="<%= hello_path @conn, :index %>">Link to Hello</a></p>
   <p class="lead">This is a slightly customized phoenix app.</p>
   <ul>
     <ol><a href="/hello">Hello!</a></ol>
