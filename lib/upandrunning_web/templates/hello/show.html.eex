@@ -1,0 +1,5 @@
+<div class="alert alert-success">
+    <h2>Welcome <%= assigns.messenger %></h2>
+    <!-- assigns.messenger is identical to @messenger -->
+    <p>Change the URL parameter to match your desired greeting.</p>
+</div>

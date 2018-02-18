@@ -1,5 +1,6 @@
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
   <p class="lead">This is a slightly customized Phoenix app.</p>
-  <a href="/hello">Hello!</a>
+  <p><a href="/hello">Hello!</a></p>
+  <p><a href="/hello/YourName">Welcome YourName</a></p>
 </div>
