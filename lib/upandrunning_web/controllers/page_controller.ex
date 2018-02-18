@@ -33,6 +33,11 @@ defmodule UpandrunningWeb.PageController do
     |> render("index.html")    
   end
 
+  def test(conn, _params) do
+    conn
+    |> render("test.html")
+  end
+
   def blob(conn, _params) do
     json conn, %{name: "Eric"}
   end

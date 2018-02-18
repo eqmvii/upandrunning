@@ -19,6 +19,7 @@ defmodule UpandrunningWeb.Router do
     get "/", PageController, :index
     get "/plain", PageController, :plain_index
     get "/admin", PageController, :admin_index
+    get "/test", PageController, :test
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     get "/raw/", PageController, :raw

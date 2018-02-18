@@ -11,6 +11,8 @@
     <ol><a href="/raw/56">Try raw HTML with an id!</a></ol>
     <ol><a href="/plain">Render plain, with no layout</a></ol>
     <ol><a href="/admin">Logo-free admin page via a different layout</a></ol>
+    <ol><a href="/test">Test for template testing</a></ol>
+    <ol><a href="/thispagedoesnotexist">Error test</a></ol>
   </ul>
 </div>
 

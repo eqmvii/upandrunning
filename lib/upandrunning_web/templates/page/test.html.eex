@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <p><%= handler_info @conn %></p>
+</div>
+
+<div class="alert alert-warning">
+  <h3>Keys for the conn Struct</h3>
+    <!-- the following code runs the connection_keys function 
+    in page_view.ex passing it the @conn as an argument -->
+    <ol>
+  <%= for key <- connection_keys @conn do %>
+    <%= render UpandrunningWeb.SharedView, "_key.html", key: key %>
+  <% end %>
+  </ol>
+</div>
