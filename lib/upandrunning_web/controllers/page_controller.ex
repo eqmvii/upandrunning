@@ -1,11 +1,27 @@
 defmodule UpandrunningWeb.PageController do
   use UpandrunningWeb, :controller
 
+  # def index(conn, _params) do
+  #   # render conn, "index.html"
+  #   conn
+  #   |> put_flash(:info, "Hello this is a flash message!")
+  #   |> put_flash(:error, "This is a fake error message.")
+  #   |> render("index.html")
+  # end
+
   def index(conn, _params) do
-    # render conn, "index.html"
+    redirect conn, to: "/redirect_test"
+  end
+
+  def redirect_test(conn, _params) do
+    text conn, "Redirect!"
+  end
+
+  def admin_index(conn, _params) do
+    # render the page with no logo
     conn
-    |> put_flash(:info, "Hello this is a flash message!")
-    |> put_flash(:error, "This is a fake error message.")
+    |> put_layout("admin.html")
+    |> put_flash(:info, "Welcome to the logo-free admin page!")
     |> render("index.html")
   end
 

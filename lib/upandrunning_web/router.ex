@@ -18,6 +18,7 @@ defmodule UpandrunningWeb.Router do
 
     get "/", PageController, :index
     get "/plain", PageController, :plain_index
+    get "/admin", PageController, :admin_index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     get "/raw/", PageController, :raw
@@ -25,9 +26,12 @@ defmodule UpandrunningWeb.Router do
 
     resources "/users", UserController
     resources "/posts", PostController, only: [:index, :show]
-    resources "/comments", CommentController, except: [:delete]
-    
+    resources "/comments", CommentController, except: [:delete]    
 
+  end
+
+  scope "/", UpandrunningWeb do
+    get "/redirect_test", PageController, :redirect_test, as: :redirect_test
   end
 
   # Other scopes may use custom stacks.
