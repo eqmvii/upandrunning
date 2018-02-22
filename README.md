@@ -2,9 +2,13 @@
 
 To load the app in iex, use: `iex -S mix`
 
-Paused at: module is the foundation we need 
+Paused at:  Starting With Generators
 
-from https://hexdocs.pm/phoenix/ecto.html#content
+from https://hexdocs.pm/phoenix/contexts.html#content
+
+Generators used:
+
+* mix phx.gen.html Accounts User users name:string username:string:unique
 
 ## Postgres drama on Ubuntu? Try:
 
