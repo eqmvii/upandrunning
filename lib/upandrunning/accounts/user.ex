@@ -1,12 +1,13 @@
 defmodule Upandrunning.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Upandrunning.Accounts.User
+  alias Upandrunning.Accounts.{User, Credential}
 
-
+  # Ecto's has_one macro tells Ecto how to associate User (parent) to Credential (child)
   schema "users" do
     field :name, :string
     field :username, :string
+    has_one :credential, Credential
 
     timestamps()
   end

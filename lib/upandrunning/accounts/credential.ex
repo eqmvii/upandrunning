@@ -1,12 +1,12 @@
 defmodule Upandrunning.Accounts.Credential do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Upandrunning.Accounts.Credential
+  alias Upandrunning.Accounts.{Credential, User}
 
 
   schema "credentials" do
     field :email, :string
-    field :user_id, :id
+    belongs_to :user, User
 
     timestamps()
   end

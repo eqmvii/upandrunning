@@ -2,7 +2,7 @@
 
 To load the app in iex, use: `iex -S mix`
 
-Paused at:  Starting With Generators
+Paused at: Adding Account functions
 
 from https://hexdocs.pm/phoenix/contexts.html#content
 
