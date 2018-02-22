@@ -13,6 +13,8 @@
     <ol><a href="/admin">Logo-free admin page via a different layout</a></ol>
     <ol><a href="/test">Test for template testing</a></ol>
     <ol><a href="/thispagedoesnotexist">Error test</a></ol>
+    <ol><%= link "Users Index", to: user_path(@conn, :index) %></ol>
+    
   </ul>
 </div>
 

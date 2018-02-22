@@ -1,6 +1,6 @@
 defmodule Upandrunning.Accounts do
   @moduledoc """
-  The Accounts context.
+  The Accounts context. This is the public API for all accounts functionality.
   """
 
   import Ecto.Query, warn: false
