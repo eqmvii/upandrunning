@@ -11,6 +11,11 @@ Generators used:
 * mix phx.gen.html Accounts User users name:string username:string:unique
 * mix phx.gen.context Accounts Credential credentials email:string:unique user_id:references:users
 
+DB migration notes:
+
+* jumped the gun on an ecto create, used mix ecto.rollback -n 1
+* updated the migration file before running mix ecto.migrate 
+
 ## Postgres drama on Ubuntu? Try:
 
 https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge
