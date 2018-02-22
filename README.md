@@ -9,6 +9,7 @@ from https://hexdocs.pm/phoenix/contexts.html#content
 Generators used:
 
 * mix phx.gen.html Accounts User users name:string username:string:unique
+* mix phx.gen.context Accounts Credential credentials email:string:unique user_id:references:users
 
 ## Postgres drama on Ubuntu? Try:
 
