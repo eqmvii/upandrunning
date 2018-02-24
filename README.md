@@ -1,5 +1,21 @@
 # Upandrunning
 
+A simple Phoenix/Elixir app deployed to Heroku, built and slightly modified from the documentation guide here:
+
+[Phoenix Guide](https://hexdocs.pm/phoenix/)
+
+# Deployment and Heroku
+
+[Deployment Guide](https://hexdocs.pm/phoenix/heroku.html)
+
+`git push origin master`
+
+`git push heroku master`
+
+heroku logs --tail
+
+# Local work and development notes
+
 To load the app in iex, use: `iex -S mix`
 
 Paused at: Cross-context dependencies
@@ -19,6 +35,8 @@ DB migration notes:
 ## Postgres drama on Ubuntu? Try:
 
 https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge
+
+# Boilerplate from the initial Phoenix commands
 
 ## To start your Phoenix server:
 
