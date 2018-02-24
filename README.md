@@ -1,5 +1,7 @@
 # Upandrunning
 
+[See the app live on Heroku](https://infinite-woodland-28001.herokuapp.com/)
+
 A simple Phoenix/Elixir app deployed to Heroku, built and slightly modified from the documentation guide here:
 
 [Phoenix Guide](https://hexdocs.pm/phoenix/)
