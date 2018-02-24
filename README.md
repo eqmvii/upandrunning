@@ -2,9 +2,9 @@
 
 To load the app in iex, use: `iex -S mix`
 
-Paused at: Adding Account functions
+Paused at: Cross-context dependencies
 
-from https://hexdocs.pm/phoenix/contexts.html#content
+from https://hexdocs.pm/phoenix/contexts.html
 
 Generators used:
 
